@@ -8,6 +8,7 @@
   src: url(Fonts/SlimeBox-GWMD.ttf);
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 body {
   background-color: #3399FF;
