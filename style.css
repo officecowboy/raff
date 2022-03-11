@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Seaweed-Script';
+  src: url(Fonts/SeaweedScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Slime-Box';
+  src: url(Fonts/SlimeBox-GWMD.ttf);
+}
+
+
+body {
+  background-color: #3399FF;
+  background-image: url( );
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: Slime-Box;
+  color: #F6E701;
+  height: 100vh;
+}
+
