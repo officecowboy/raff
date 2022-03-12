@@ -95,7 +95,7 @@ function videoSlider() {
     }
     else {
       videoCards[i].style.display = 'none';
-      i -= (musicCards.length - 1);
+      i -= (videoCards.length - 1);
       videoCards[i].style.display = 'initial';
     }
   })
