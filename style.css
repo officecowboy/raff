@@ -84,7 +84,7 @@ a:hover {
 }
 
 .button:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .content {
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .arrow-left:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .arrow-right {
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .arrow-right:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .social {
@@ -208,6 +208,7 @@ a:hover {
   position: relative;
   width: 100%;
   height: 0;
+  display: none;
   padding-bottom: 56.25%;
 }
 .video {

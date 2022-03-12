@@ -64,5 +64,45 @@ function musicSlider() {
 
 musicSlider()
 
+function videoSlider() {
+
+  let videoCards = document.querySelectorAll(".js-video-card")
+  const leftArrow = document.querySelector("#arrowleft-video")
+  const rightArrow = document.querySelector("#arrowright-video")
+
+  let i = 0;
+  videoCards[i].style.display = 'flex'
+
+
+  leftArrow.addEventListener("click", function () {
+    if (i >= 1) {
+      videoCards[i].style.display = 'none';
+      i--;
+      videoCards[i].style.display = 'initial';
+    }
+    else {
+      videoCards[i].style.display = 'none';
+      i += (videoCards.length - 1);
+      videoCards[i].style.display = 'initial';
+    }
+  })
+
+  rightArrow.addEventListener("click", function () {
+    if (i < (videoCards.length - 1)) {
+      videoCards[i].style.display = 'none';
+      i++;
+      videoCards[i].style.display = 'initial';
+    }
+    else {
+      videoCards[i].style.display = 'none';
+      i -= (musicCards.length - 1);
+      videoCards[i].style.display = 'initial';
+    }
+  })
+
+}
+
+videoSlider()
+
 
 
