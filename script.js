@@ -7,16 +7,24 @@ function menuSelect() {
 
   const contentBox = document.querySelectorAll(".js-content-box")
 
-  contentBox[1].style.display = 'grid'
+  contentBox[0].style.display = 'grid'
 
   musicButton.addEventListener("click", function () {
     contentBox[1].style.display = 'none'
+    contentBox[2].style.display = 'none'
     contentBox[0].style.display = 'grid'
   })
 
   videoButton.addEventListener("click", function () {
     contentBox[0].style.display = 'none'
+    contentBox[2].style.display = 'none'
     contentBox[1].style.display = 'grid'
+  })
+
+  picsButton.addEventListener("click", function () {
+    contentBox[0].style.display = 'none'
+    contentBox[1].style.display = 'none'
+    contentBox[2].style.display = 'grid'
   })
 
 }
@@ -104,5 +112,45 @@ function videoSlider() {
 
 videoSlider()
 
+
+function picsSlider() {
+
+  let pics = document.querySelectorAll(".js-pics")
+  const leftArrow = document.querySelector("#arrowleft-pics")
+  const rightArrow = document.querySelector("#arrowright-pics")
+
+  let i = 0;
+  pics[i].style.display = 'initial'
+
+
+  leftArrow.addEventListener("click", function () {
+    if (i >= 1) {
+      pics[i].style.display = 'none';
+      i--;
+      pics[i].style.display = 'initial';
+    }
+    else {
+      pics[i].style.display = 'none';
+      i += (pics.length - 1);
+      pics[i].style.display = 'initial';
+    }
+  })
+
+  rightArrow.addEventListener("click", function () {
+    if (i < (pics.length - 1)) {
+      pics[i].style.display = 'none';
+      i++;
+      pics[i].style.display = 'initial';
+    }
+    else {
+      pics[i].style.display = 'none';
+      i -= (pics.length - 1);
+      pics[i].style.display = 'initial';
+    }
+  })
+
+}
+
+picsSlider()
 
 
