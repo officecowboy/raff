@@ -480,7 +480,8 @@ a:hover {
   }
 
   .social-mobile {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
     width: 100%;
     display: flex;
     flex-direction: row;
