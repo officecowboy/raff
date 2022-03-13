@@ -39,8 +39,11 @@ function menuSelect() {
 
 }
 
-menuSelect()
-
+$(window).resize(function () {
+  if (screen.width >= 700) {
+    menuSelect()
+  }
+})
 
 function musicSlider() {
 
@@ -161,8 +164,4 @@ function picsSlider() {
 
 }
 
-$(window).resize(function () {
-  if (screen.width >= 700) {
-    picsSlider()
-  }
-})
+picsSlider()

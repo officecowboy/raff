@@ -33,8 +33,9 @@ let slideDown = (target, duration = 500) => {
 
   target.style.display = display;
   let height = target.offsetHeight;
-  target.style.overflow = 'hidden';
+  target.style.overflow = 'visible';
   target.style.height = 0;
+  target.style.width = '100%';
   target.style.paddingTop = 0;
   target.style.paddingBottom = 0;
   target.style.marginTop = 0;
@@ -63,18 +64,55 @@ var slideToggle = (target, duration = 500) => {
   }
 }
 
-document.getElementById("SE").addEventListener('click', function () {
-  slideToggle(document.getElementById("SylvanEsso"), 200);
+document.getElementById("button-music").addEventListener('click', function () {
+  slideToggle(document.getElementById("mobile-music-box"), 200);
 });
-document.getElementById("HC").addEventListener('click', function () {
-  slideToggle(document.getElementById("HippoCampus"), 200);
+document.getElementById("button-video").addEventListener('click', function () {
+  slideToggle(document.getElementById("mobile-video-box"), 200);
 });
-document.getElementById("BB").addEventListener('click', function () {
-  slideToggle(document.getElementById("BabyBoys"), 200);
+document.getElementById("button-pics").addEventListener('click', function () {
+  slideToggle(document.getElementById("mobile-pics-box"), 200);
 });
-document.getElementById("WA").addEventListener('click', function () {
-  slideToggle(document.getElementById("WhistlerAllen"), 200);
+document.getElementById("button-shows").addEventListener('click', function () {
+  slideToggle(document.getElementById("mobile-shows-box"), 200);
 });
-document.getElementById("WO").addEventListener('click', function () {
-  slideToggle(document.getElementById("WyeOak"), 200);
-});
+
+function musicMobileSlider() {
+
+  let musicCards = document.querySelectorAll(".js-music-card-mobile")
+  const leftArrow = document.querySelector("#arrowleft-music")
+  const rightArrow = document.querySelector("#arrowright-music")
+
+  let i = 0;
+  musicCards[i].style.display = 'flex'
+
+
+  leftArrow.addEventListener("click", function () {
+    if (i >= 1) {
+      musicCards[i].style.display = 'none';
+      i--;
+      musicCards[i].style.display = 'flex';
+    }
+    else {
+      musicCards[i].style.display = 'none';
+      i += (musicCards.length - 1);
+      musicCards[i].style.display = 'flex';
+    }
+  })
+
+  rightArrow.addEventListener("click", function () {
+    if (i < (musicCards.length - 1)) {
+      musicCards[i].style.display = 'none';
+      i++;
+      musicCards[i].style.display = 'flex';
+    }
+    else {
+      musicCards[i].style.display = 'none';
+      i -= (musicCards.length - 1);
+      musicCards[i].style.display = 'flex';
+    }
+  })
+
+}
+
+musicMobileSlider()
