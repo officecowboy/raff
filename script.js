@@ -7,7 +7,7 @@ function menuSelect() {
 
   const contentBox = document.querySelectorAll(".js-content-box")
 
-  contentBox[3].style.display = 'flex'
+  contentBox[0].style.display = 'grid'
 
   musicButton.addEventListener("click", function () {
     contentBox[1].style.display = 'none'
