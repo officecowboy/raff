@@ -39,17 +39,16 @@ function menuSelect() {
 
 }
 
-$(window).resize(function () {
-  if (screen.width >= 700) {
-    menuSelect()
-  }
-})
+if (window.innerWidth >= 700) {
+  menuSelect()
+}
+
 
 function musicSlider() {
 
   let musicCards = document.querySelectorAll(".js-music-card")
-  const leftArrow = document.querySelector("#arrowleft-music")
-  const rightArrow = document.querySelector("#arrowright-music")
+  const leftArrow = document.querySelector("#arrowleft-music-desktop")
+  const rightArrow = document.querySelector("#arrowright-music-desktop")
 
   let i = 0;
   musicCards[i].style.display = 'flex'

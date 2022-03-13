@@ -33,7 +33,7 @@ let slideDown = (target, duration = 500) => {
 
   target.style.display = display;
   let height = target.offsetHeight;
-  target.style.overflow = 'visible';
+  target.style.overflow = 'hidden';
   target.style.height = 0;
   target.style.width = '100%';
   target.style.paddingTop = 0;

@@ -14,11 +14,15 @@ body {
   background-color: #fcccfe;
   font-family: Slime-Box;
   color: #F6E701;
-  height: 100vh;
+}
+
+.interface-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #myVideo {
@@ -426,15 +430,31 @@ a:hover {
 
 @media only screen and (max-width: 700px) {
 
-  html, body {overflow: visible}
+  html, body {overflow: scroll}
 
   .content {
     display: none;
   }
 
+  .interface-container {
+    width: 100%;
+    height: 100%;
+  }
+
   .interface {
     max-width: 90%;
     max-height: none;
+  }
+
+  .interface-container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .interface {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sidebar {
@@ -549,6 +569,11 @@ a:hover {
     align-items: center;
     font-size: 22px;
   }
+
+  .button:hover {
+    color:#F6E701
+  }
+
 
 }
 
