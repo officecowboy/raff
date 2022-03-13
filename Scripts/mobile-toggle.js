@@ -1,4 +1,13 @@
+let interfaceContainer = document.querySelector(".interface-container")
+let interface = document.querySelector(".interface")
+
 let slideUp = (target, duration = 500) => {
+
+  interfaceContainer.style.display = 'flex';
+  interfaceContainer.style.margin = '0 auto';
+  interface.style.margin = 'auto';
+  interface.style.marginTop = 'none';
+
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
   target.style.boxSizing = 'border-box';
@@ -25,6 +34,12 @@ let slideUp = (target, duration = 500) => {
 }
 
 let slideDown = (target, duration = 500) => {
+
+  interfaceContainer.style.display = 'block';
+  interfaceContainer.style.margin = '0 auto';
+  interface.style.margin = 'auto';
+  interface.style.marginTop = '100px';
+
   target.style.removeProperty('display');
   let display = window.getComputedStyle(target).display;
 
