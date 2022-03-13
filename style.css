@@ -470,6 +470,7 @@ a:hover {
 
   .logo {
     left: 50%;
+    padding-top: 3px;
     top: -86px;
     transform: translateX(-50%);
     width: 290px;
