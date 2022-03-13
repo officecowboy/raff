@@ -7,24 +7,34 @@ function menuSelect() {
 
   const contentBox = document.querySelectorAll(".js-content-box")
 
-  contentBox[0].style.display = 'grid'
+  contentBox[3].style.display = 'flex'
 
   musicButton.addEventListener("click", function () {
     contentBox[1].style.display = 'none'
     contentBox[2].style.display = 'none'
+    contentBox[3].style.display = 'none'
     contentBox[0].style.display = 'grid'
   })
 
   videoButton.addEventListener("click", function () {
     contentBox[0].style.display = 'none'
     contentBox[2].style.display = 'none'
+    contentBox[3].style.display = 'none'
     contentBox[1].style.display = 'grid'
   })
 
   picsButton.addEventListener("click", function () {
     contentBox[0].style.display = 'none'
     contentBox[1].style.display = 'none'
+    contentBox[3].style.display = 'none'
     contentBox[2].style.display = 'grid'
+  })
+
+  showsButton.addEventListener("click", function () {
+    contentBox[0].style.display = 'none'
+    contentBox[1].style.display = 'none'
+    contentBox[2].style.display = 'none'
+    contentBox[3].style.display = 'flex'
   })
 
 }
@@ -120,19 +130,19 @@ function picsSlider() {
   const rightArrow = document.querySelector("#arrowright-pics")
 
   let i = 0;
-  pics[i].style.display = 'initial'
+  pics[i].style.display = 'flex'
 
 
   leftArrow.addEventListener("click", function () {
     if (i >= 1) {
       pics[i].style.display = 'none';
       i--;
-      pics[i].style.display = 'initial';
+      pics[i].style.display = 'flex';
     }
     else {
       pics[i].style.display = 'none';
       i += (pics.length - 1);
-      pics[i].style.display = 'initial';
+      pics[i].style.display = 'flex';
     }
   })
 
@@ -140,12 +150,12 @@ function picsSlider() {
     if (i < (pics.length - 1)) {
       pics[i].style.display = 'none';
       i++;
-      pics[i].style.display = 'initial';
+      pics[i].style.display = 'flex';
     }
     else {
       pics[i].style.display = 'none';
       i -= (pics.length - 1);
-      pics[i].style.display = 'initial';
+      pics[i].style.display = 'flex';
     }
   })
 

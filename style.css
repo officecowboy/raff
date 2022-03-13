@@ -228,9 +228,77 @@ a:hover {
 
 .pics {
   display: none;
+  border: 2px solid #3366CC;
+  align-items: center;
+  justify-content: center;
 }
 
 .pics img {
   max-width: 100%;
   max-height: 410px;
+}
+
+#shows-box {
+  width: 600px;
+  height: 450px;
+  max-width: 100%;
+  max-height: 100%;
+  background: #6699FF;
+  box-shadow: inset 3px 4px 0px #000000;  
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-around;
+  font-size: 14px;
+}
+
+.show-row {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+
+.show-dates {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.show-venue {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.show-city {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.tickets {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  border: 3px solid #3366CC;
+  border-radius: 5px;
+  background-color: #3366CC;
+  padding: 5px;
+  filter: drop-shadow(0px 1px 0px #000000);
+}
+
+.show-row a {
+  text-decoration: none;
+  color:#F6E701;
+}
+
+.tickets:hover {
+  color: #EC5D93;
+  cursor: pointer;
+}
+
+.tickets:active {
+  transform: scale(0.95);
 }
