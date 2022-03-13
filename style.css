@@ -177,6 +177,11 @@ a:hover {
   align-items: center;
 }
 
+.song-link {
+  text-decoration: none;
+  color:#F6E701;
+}
+
 .music-card {
   background: #3366CC;
   box-shadow: 0px 2px 0px #000000;
