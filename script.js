@@ -161,6 +161,8 @@ function picsSlider() {
 
 }
 
-picsSlider()
-
-
+$(window).resize(function () {
+  if (screen.width >= 700) {
+    picsSlider()
+  }
+})
