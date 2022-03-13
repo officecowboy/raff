@@ -128,8 +128,8 @@ videoSlider()
 function picsSlider() {
 
   let pics = document.querySelectorAll(".js-pics")
-  const leftArrow = document.querySelector("#arrowleft-pics")
-  const rightArrow = document.querySelector("#arrowright-pics")
+  const leftArrow = document.querySelector("#arrowleft-pics-desktop")
+  const rightArrow = document.querySelector("#arrowright-pics-desktop")
 
   let i = 0;
   pics[i].style.display = 'flex'

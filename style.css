@@ -444,6 +444,7 @@ a:hover {
   .interface {
     max-width: 90%;
     max-height: none;
+    margin-top: 45px;
   }
 
 
@@ -564,6 +565,18 @@ a:hover {
     color:#F6E701
   }
 
+  .pics {
+    margin: 20px 0;
+  }
+  
+  .pics img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .pics-box {
+    height: 350px;
+  }
 
 }
 

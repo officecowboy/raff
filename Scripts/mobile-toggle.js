@@ -131,3 +131,44 @@ function musicMobileSlider() {
 }
 
 musicMobileSlider()
+
+
+function picsMobileSlider() {
+
+  let pics = document.querySelectorAll(".js-pics-mobile")
+  const leftArrow = document.querySelector("#arrowleft-pics")
+  const rightArrow = document.querySelector("#arrowright-pics")
+
+  let i = 0;
+  pics[i].style.display = 'flex'
+
+
+  leftArrow.addEventListener("click", function () {
+    if (i >= 1) {
+      pics[i].style.display = 'none';
+      i--;
+      pics[i].style.display = 'flex';
+    }
+    else {
+      pics[i].style.display = 'none';
+      i += (pics.length - 1);
+      pics[i].style.display = 'flex';
+    }
+  })
+
+  rightArrow.addEventListener("click", function () {
+    if (i < (pics.length - 1)) {
+      pics[i].style.display = 'none';
+      i++;
+      pics[i].style.display = 'flex';
+    }
+    else {
+      pics[i].style.display = 'none';
+      i -= (pics.length - 1);
+      pics[i].style.display = 'flex';
+    }
+  })
+
+}
+
+picsMobileSlider()
