@@ -3,11 +3,6 @@ let interface = document.querySelector(".interface")
 
 let slideUp = (target, duration = 500) => {
 
-  interfaceContainer.style.display = 'flex';
-  interfaceContainer.style.margin = '0 auto';
-  interface.style.margin = 'auto';
-  interface.style.marginTop = 'none';
-
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
   target.style.boxSizing = 'border-box';
@@ -31,14 +26,15 @@ let slideUp = (target, duration = 500) => {
     target.style.removeProperty('transition-property');
     //alert("!");
   }, duration);
+
+  interfaceContainer.style.display = 'flex';
+  interfaceContainer.style.margin = '0 auto';
+  interface.style.margin = 'auto';
+  interface.style.marginTop = 'none';
+
 }
 
 let slideDown = (target, duration = 500) => {
-
-  interfaceContainer.style.display = 'block';
-  interfaceContainer.style.margin = '0 auto';
-  interface.style.margin = 'auto';
-  interface.style.marginTop = '100px';
 
   target.style.removeProperty('display');
   let display = window.getComputedStyle(target).display;
@@ -70,6 +66,12 @@ let slideDown = (target, duration = 500) => {
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');
   }, duration);
+
+  interfaceContainer.style.display = 'block';
+  interfaceContainer.style.margin = '0 auto';
+  interface.style.margin = 'auto';
+  interface.style.marginTop = '100px';
+
 }
 var slideToggle = (target, duration = 500) => {
   if (window.getComputedStyle(target).display === 'none') {
@@ -171,4 +173,58 @@ function picsMobileSlider() {
 
 }
 
-picsMobileSlider()
+
+function picsTouchSlider() {
+
+
+  let pics = document.querySelectorAll(".js-pics-mobile")
+
+  let i = 0;
+  pics[i].style.display = 'flex'
+
+
+  let touchstartX = 0
+  let touchendX = 0
+
+  const slider = document.querySelector('.js-pics-mobile-container')
+
+  function handleGesture() {
+    if (touchendX < touchstartX) {
+      if (i >= 1) {
+        pics[i].style.display = 'none';
+        i--;
+        pics[i].style.display = 'flex';
+      }
+      else {
+        pics[i].style.display = 'none';
+        i += (pics.length - 1);
+        pics[i].style.display = 'flex';
+      }
+    }
+
+    if (touchendX > touchstartX) {
+      if (i < (pics.length - 1)) {
+        pics[i].style.display = 'none';
+        i++;
+        pics[i].style.display = 'flex';
+      }
+      else {
+        pics[i].style.display = 'none';
+        i -= (pics.length - 1);
+        pics[i].style.display = 'flex';
+      }
+    }
+  }
+
+  slider.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX
+  })
+
+  slider.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX
+    handleGesture()
+  })
+
+}
+
+picsTouchSlider();
