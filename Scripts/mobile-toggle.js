@@ -30,7 +30,7 @@ let slideUp = (target, duration = 500) => {
   interfaceContainer.style.display = 'flex';
   interfaceContainer.style.margin = '0 auto';
   interface.style.margin = 'auto';
-  interface.style.marginTop = '130px';
+  interface.style.marginTop = '100px';
 
 }
 
