@@ -444,6 +444,7 @@ a:hover {
   .interface {
     max-width: 90%;
     max-height: none;
+    margin-top: 118px;
   }
 
 
@@ -463,7 +464,7 @@ a:hover {
   }
 
   .last-button {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   .first-button {
@@ -494,7 +495,7 @@ a:hover {
   .social-mobile {
     padding-top: 20px;
     padding-bottom: 10px;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -506,12 +507,12 @@ a:hover {
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-    color:#F6E701;
+    color:#3366CC;
     padding-bottom: 15px;
   }
   
   .contact-mobile a {
-    color:#F6E701
+    color:#3366CC
   }
 
   .mobile-content-box {
