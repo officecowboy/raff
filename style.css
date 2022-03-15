@@ -84,7 +84,7 @@ a:hover {
 
 .button-text {
   font-size: 30px;
-  color: #3366CC;
+  color: #fcf051;
   text-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1) inset;
   position: absolute;
   top: 45%;
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .button a {
-  color: #3366CC;
+  color: #fcf051;
 }
 
 .button a:hover {
@@ -358,7 +358,7 @@ a:hover {
  }
 
  body {
-   background-image: url("Images/mobile_background.png");
+   background-color: #FEFFB6;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
