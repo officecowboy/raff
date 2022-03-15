@@ -126,7 +126,7 @@ a:hover {
   height: 450px;
   max-width: 100%;
   max-height: 100%;
-  background: #dfe8fd;
+  background: #d3dfff;
   box-shadow: inset 3px 4px 0px #000000;  
   display: none;
   grid-template-columns: [first] 100px [line2] auto [line3] 100px [end];
@@ -493,7 +493,7 @@ a:hover {
   }
 
   .mobile-content-box {
-    background: #dfe8fd;
+    background: #d3dfff;
     box-shadow: inset 3px 4px 0px #000000;  
     display: grid;
     grid-template-columns: [first] 20% [line2] auto [line3] 20% [end];
@@ -577,7 +577,7 @@ a:hover {
   }
 
   .mobile-video-box {
-    background: #dfe8fd;
+    background: #d3dfff;
     box-shadow: inset 3px 4px 0px #000000;  
     margin-bottom: 15px;
     display: flex;
@@ -587,7 +587,7 @@ a:hover {
   }
 
   .shows-content-box {
-    background: #dfe8fd;
+    background: #d3dfff;
     box-shadow: inset 3px 4px 0px #000000;  
     padding: 0px 4px;
     margin-bottom: 15px;
@@ -602,7 +602,7 @@ a:hover {
   }
 
   .mobile-merch-box {
-    background: #dfe8fd;
+    background: #d3dfff;
     box-shadow: inset 3px 4px 0px #000000;  
     display: flex;
     align-items: center;
