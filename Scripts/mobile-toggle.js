@@ -90,6 +90,9 @@ document.getElementById("button-video").addEventListener('click', function () {
 document.getElementById("button-pics").addEventListener('click', function () {
   slideToggle(document.getElementById("mobile-pics-box"), 200);
 });
+document.getElementById("button-merch").addEventListener('click', function () {
+  slideToggle(document.getElementById("mobile-merch-box"), 200);
+});
 document.getElementById("button-shows").addEventListener('click', function () {
 
   let mobileShows = document.querySelector(".shows-content-box")
