@@ -349,6 +349,10 @@ a:hover {
   display: none;
 }
 
+.logo-mobile {
+  display: none;
+}
+
 /* iPad */
 
 @media only screen and (max-width: 830px) {
@@ -454,6 +458,7 @@ a:hover {
     max-width: 90%;
     max-height: none;
     margin-top: 100px;
+    border: 4px solid #EC5D93;
   }
 
   footer {
@@ -463,6 +468,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 
 
@@ -499,11 +505,18 @@ a:hover {
   }
 
   .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: initial;
     left: 50%;
     padding-top: 3px;
     top: -90px;
     transform: translateX(-50%);
     width: 290px;
+    position: absolute;
+    z-index: 2;
   }
 
   .contact {
