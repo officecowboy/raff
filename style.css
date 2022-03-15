@@ -47,7 +47,7 @@ a:hover {
   max-height: 650px;
   background: #fcf051;
   border: 4px solid #EC5D93;
-  color:#EC5D93;
+  color:#fcf051;
   box-sizing: border-box;
 
   box-shadow: inset 0px -4px 0px #000000;
@@ -118,6 +118,7 @@ a:hover {
   justify-content: space-around;
   margin-right: 30px;
   height: 100%;
+  color: #EC5D93;
 }
 
 .content-box {
@@ -264,18 +265,9 @@ a:hover {
   max-height: 410px;
 }
 
-#shows-box {
-  width: 600px;
-  height: 450px;
-  max-width: 100%;
-  max-height: 100%;
-  background: #6699FF;
-  box-shadow: inset 3px 4px 0px #000000;  
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-around;
-  font-size: 14px;
+.shows-box {
+  color:#fef3fe;
+  overflow-y: scroll;
 }
 
 .show-row {
@@ -644,7 +636,7 @@ a:hover {
   .shows-content-box {
     background: #6699FF;
     box-shadow: inset 3px 4px 0px #000000;  
-    padding-bottom: 1px;
+    padding: 0px 4px 1px 4px;
     margin-bottom: 15px;
   }
 

@@ -91,7 +91,12 @@ document.getElementById("button-pics").addEventListener('click', function () {
   slideToggle(document.getElementById("mobile-pics-box"), 200);
 });
 document.getElementById("button-shows").addEventListener('click', function () {
-  slideToggle(document.getElementById("mobile-shows-box"), 200);
+
+  let mobileShows = document.querySelector(".shows-content-box")
+  let seated = document.getElementById("seated-widget")
+
+  mobileShows.appendChild(seated)
+  slideToggle(mobileShows, 200);
 });
 
 function musicMobileSlider() {

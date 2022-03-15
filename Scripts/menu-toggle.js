@@ -34,7 +34,7 @@ function menuSelect() {
     contentBox[0].style.display = 'none'
     contentBox[1].style.display = 'none'
     contentBox[2].style.display = 'none'
-    contentBox[3].style.display = 'flex'
+    contentBox[3].style.display = 'block'
   })
 
 }
