@@ -103,7 +103,7 @@ a:hover {
 }
 
 .button a {
-  color: #fcf051;
+  color: #fc;
 }
 
 .button a:hover {
@@ -358,7 +358,7 @@ a:hover {
  }
 
  body {
-   background-color: #FEFFB6;
+   background-image: url("Images/mobile_background.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -438,6 +438,7 @@ a:hover {
 @media only screen and (max-width: 700px) {
 
   html, body {overflow: scroll}
+
 
   .content {
     display: none;
