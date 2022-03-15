@@ -342,9 +342,6 @@ a:hover {
   display: none;
 }
 
-.logo-mobile {
-  display: none;
-}
 
 /* iPad */
 
@@ -497,10 +494,6 @@ a:hover {
   }
 
   .logo {
-    display: none;
-  }
-
-  .logo-mobile {
     display: initial;
     left: 50%;
     padding-top: 3px;
@@ -589,7 +582,7 @@ a:hover {
   }
 
   .pics {
-    margin: 20px 0;
+    margin: 15px 0;
     width: 85%;
   }
   

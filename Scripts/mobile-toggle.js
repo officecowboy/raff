@@ -140,7 +140,7 @@ function musicMobileSlider() {
 musicMobileSlider()
 
 
-function picsMobileSlider() {
+/* function picsMobileSlider() {
 
   let pics = document.querySelectorAll(".js-pics-mobile")
   const leftArrow = document.querySelector("#arrowleft-pics")
@@ -232,4 +232,30 @@ function picsTouchSlider() {
 
 }
 
-picsTouchSlider();
+picsTouchSlider(); */
+
+
+function picsTouchButton() {
+
+  let pics = document.querySelectorAll(".js-pics-mobile")
+  const slider = document.querySelector('.js-pics-mobile-container')
+
+  let i = 0;
+  pics[i].style.display = 'flex'
+
+  slider.addEventListener("touchstart", function () {
+    if (i < (pics.length - 1)) {
+      pics[i].style.display = 'none';
+      i++;
+      pics[i].style.display = 'flex';
+    }
+    else {
+      pics[i].style.display = 'none';
+      i -= (pics.length - 1);
+      pics[i].style.display = 'flex';
+    }
+  })
+
+}
+
+picsTouchButton();
