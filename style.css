@@ -323,7 +323,7 @@ a:hover {
  body {
    background-image: url("Images/mobile_background.webp");
    background-image: -webkit-image-set(
-            url("exampleimage.webp")
+            url("Images/mobile_background.webp")
         );
     background-image: image-set(
             url("Images/mobile_background.png")
@@ -443,6 +443,7 @@ a:hover {
   .sidebar {
     height: 70%;
     padding-top: 25px;
+    padding-bottom: 25px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -460,7 +461,7 @@ a:hover {
   }
 
   .last-button {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .first-button {
@@ -643,15 +644,15 @@ a:hover {
 @media only screen and (max-height: 700px) {
 
   .button {
-    width: 130px;
+    width: 150px;
   }
 
   .button img {
-    width: 130px;
+    width: 150px;
   }
 
   .button-text {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .music-card {
