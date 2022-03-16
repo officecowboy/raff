@@ -313,7 +313,7 @@ a:hover {
  }
 
  body {
-   background-image: url("Images/mobile_background.png");
+   background-image: url("Images/mobile_background.webp");
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
