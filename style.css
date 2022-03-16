@@ -17,6 +17,10 @@ body {
   height: 100%;
 }
 
+picture {
+  line-height: 0;
+}
+
 .interface-container {
   display: flex;
   flex-direction: column;
