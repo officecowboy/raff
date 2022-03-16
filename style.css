@@ -78,7 +78,11 @@ a:hover {
   position: relative;
 }
 
-.button img {
+.button-image {
+  width: 150px;
+}
+
+.button img class="lazy" {
   width: 150px;
   max-width: 100%;
 }
@@ -223,7 +227,7 @@ a:hover {
   border: 2px solid #e493af;
 }
 
-.cover img {
+.cover img class="lazy" {
   max-width: 100%;
   max-height: 100%;
 }
@@ -348,6 +352,10 @@ a:hover {
   width: 130px;
 }
 
+.button-image {
+  width: 130px;
+}
+
 .logo {
   left: 15px;
   top: -45px;
@@ -437,6 +445,10 @@ a:hover {
     margin-bottom: 15px;
   }
 
+  .button img {
+    width: 200px;
+  }
+
   .last-button {
     margin-bottom: 20px;
   }
@@ -445,7 +457,7 @@ a:hover {
     margin-top: 20px;
   }
 
-  .button img {
+  .button img class="lazy" {
     width: 200px;
     max-width: 100%;
   }
