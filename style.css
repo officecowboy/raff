@@ -332,7 +332,6 @@ a:hover {
 .seated-event-link1:hover,
 .seated-event-link2:hover {
   color: #fef3fe !important;
-  border: solid 2px #fef3fe !important;
   background: #EC5D93 !important;
 }
 
@@ -344,7 +343,6 @@ a:hover {
 
 .seated-follow-link:hover {
   color: #fef3fe !important;
-  border: solid 2px #fef3fe !important;
   background: #EC5D93 !important;
 }
 
