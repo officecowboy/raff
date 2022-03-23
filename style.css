@@ -556,6 +556,14 @@ a:hover {
     transform: none;
   }
 
+  .arrow-left:active {
+    transform: none;
+  }
+
+  .arrow-right:active {
+    transform: none;
+  }
+
   .last-button {
     margin-bottom: 15px;
   }
