@@ -319,6 +319,34 @@ a:hover {
   font-size: 36px;
 }
 
+.seated-event-link1,
+.seated-event-link1:visited,
+.seated-event-link2,
+.seated-event-link2:visited {
+   background: #fef3fe !important;
+   color: #EC5D93 !important;
+   border-color: #EC5D93 !important;
+
+}
+
+.seated-event-link1:hover,
+.seated-event-link2:hover {
+  color: #fef3fe !important;
+  border: solid 2px #fef3fe !important;
+  background: #EC5D93 !important;
+}
+
+.seated-follow-link {
+  background: #fef3fe !important;
+  color: #EC5D93 !important;
+  border-color: #EC5D93 !important;
+}
+
+.seated-follow-link:hover {
+  color: #fef3fe !important;
+  border: solid 2px #fef3fe !important;
+  background: #EC5D93 !important;
+}
 
 
 /* iPad */
