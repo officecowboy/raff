@@ -315,7 +315,7 @@ a:hover {
 }
 
 .shows-box {
-  color:#3366CC;
+  color:#EC5D93;
   overflow-y: scroll;
 }
 
@@ -353,6 +353,23 @@ a:hover {
   width: 100%;
 }
 
+.seated-event-date-cell {
+  color: #3366CC;
+  font-family: Verdana;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.seated-event-venue-cell {
+  color: #EC5D93;
+}
+
+.seated-event-venue-location {
+  padding-top: 2px;
+  color: #3366CC;
+  font-family: Verdana;
+  font-size: 14px;
+}
 
 /* iPad */
 
