@@ -4,7 +4,6 @@ function menuSelect() {
   const videoButton = document.querySelector("#button-video")
   const picsButton = document.querySelector("#button-pics")
   const showsButton = document.querySelector("#button-shows")
-  const merchButton = document.querySelector("#button-merch")
 
   const contentBox = document.querySelectorAll(".js-content-box")
 
@@ -14,7 +13,6 @@ function menuSelect() {
     contentBox[1].style.display = 'none'
     contentBox[2].style.display = 'none'
     contentBox[3].style.display = 'none'
-    contentBox[4].style.display = 'none'
     contentBox[0].style.display = 'grid'
   })
 
@@ -22,7 +20,6 @@ function menuSelect() {
     contentBox[0].style.display = 'none'
     contentBox[2].style.display = 'none'
     contentBox[3].style.display = 'none'
-    contentBox[4].style.display = 'none'
     contentBox[1].style.display = 'grid'
   })
 
@@ -30,7 +27,6 @@ function menuSelect() {
     contentBox[0].style.display = 'none'
     contentBox[1].style.display = 'none'
     contentBox[3].style.display = 'none'
-    contentBox[4].style.display = 'none'
     contentBox[2].style.display = 'grid'
   })
 
@@ -38,16 +34,7 @@ function menuSelect() {
     contentBox[0].style.display = 'none'
     contentBox[1].style.display = 'none'
     contentBox[2].style.display = 'none'
-    contentBox[4].style.display = 'none'
     contentBox[3].style.display = 'block'
-  })
-
-  merchButton.addEventListener("click", function () {
-    contentBox[0].style.display = 'none'
-    contentBox[1].style.display = 'none'
-    contentBox[2].style.display = 'none'
-    contentBox[3].style.display = 'none'
-    contentBox[4].style.display = 'flex'
   })
 
 }
