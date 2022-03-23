@@ -81,13 +81,26 @@ var slideToggle = (target, duration = 500) => {
   }
 }
 
-document.getElementById("button-music").addEventListener('click', function () {
+let musicButtonMobile = document.getElementById("button-music")
+let videoButtonMobile = document.getElementById("button-video")
+let picsButtonMobile = document.getElementById("button-pics")
+let showsButtonMobile = document.getElementById("button-shows")
+let merchButtonMobile = document.getElementById("button-merch")
+
+
+musicButtonMobile.addEventListener('click', function () {
+  musicButtonMobile.classList.add('activated')
+  setTimeout(() => { musicButtonMobile.classList.remove('activated') }, 200)
   slideToggle(document.getElementById("mobile-music-box"), 200);
 });
-document.getElementById("button-video").addEventListener('click', function () {
+videoButtonMobile.addEventListener('click', function () {
+  videoButtonMobile.classList.add('activated')
+  setTimeout(() => { videoButtonMobile.classList.remove('activated') }, 200)
   slideToggle(document.getElementById("mobile-video-box"), 200);
 });
-document.getElementById("button-pics").addEventListener('click', function () {
+picsButtonMobile.addEventListener('click', function () {
+  picsButtonMobile.classList.add('activated')
+  setTimeout(() => { picsButtonMobile.classList.remove('activated') }, 200)
   slideToggle(document.getElementById("mobile-pics-box"), 200);
   let picsText = document.querySelector(".pics-text")
   if (picsText.innerHTML == "Pics") {
@@ -97,14 +110,19 @@ document.getElementById("button-pics").addEventListener('click', function () {
     picsText.innerHTML = "Pics"
   }
 });
-document.getElementById("button-shows").addEventListener('click', function () {
-
+showsButtonMobile.addEventListener('click', function () {
+  showsButtonMobile.classList.add('activated')
+  setTimeout(() => { showsButtonMobile.classList.remove('activated') }, 200)
   let mobileShows = document.querySelector(".shows-content-box")
   let seated = document.getElementById("seated-widget")
 
   mobileShows.appendChild(seated)
   slideToggle(mobileShows, 200);
 });
+merchButtonMobile.addEventListener('click', function () {
+  merchButtonMobile.classList.add('activated')
+  setTimeout(() => { merchButtonMobile.classList.remove('activated') }, 200)
+})
 
 function musicMobileSlider() {
 
@@ -117,6 +135,8 @@ function musicMobileSlider() {
 
 
   leftArrow.addEventListener("click", function () {
+    leftArrow.classList.add("activated")
+    setTimeout(() => { leftArrow.classList.remove('activated-arrow') }, 200)
     if (i >= 1) {
       musicCards[i].style.display = 'none';
       i--;
@@ -130,6 +150,8 @@ function musicMobileSlider() {
   })
 
   rightArrow.addEventListener("click", function () {
+    rightArrow.classList.add("activated")
+    setTimeout(() => { rightArrow.classList.remove('activated-arrow') }, 200)
     if (i < (musicCards.length - 1)) {
       musicCards[i].style.display = 'none';
       i++;

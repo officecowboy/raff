@@ -372,6 +372,38 @@ a:hover {
   font-size: 14px;
 }
 
+.activated {
+  animation: zoom-in 0.2s ease;
+}
+
+.activated-arrow {
+  animation: zoom-in-arrow 0.2s ease;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-in-arrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* iPad */
 
 @media only screen and (max-width: 830px) {
@@ -520,6 +552,10 @@ a:hover {
     width: 200px;
   }
 
+  .button:active {
+    transform: none;
+  }
+
   .last-button {
     margin-bottom: 15px;
   }
@@ -528,7 +564,7 @@ a:hover {
     margin-top: 20px;
   }
 
-  .button img class="lazy" {
+  .button img {
     width: 200px;
     max-width: 100%;
   }

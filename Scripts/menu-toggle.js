@@ -37,6 +37,7 @@ function menuSelect() {
     contentBox[3].style.display = 'block'
   })
 
+
 }
 
 if (window.innerWidth >= 700) {
