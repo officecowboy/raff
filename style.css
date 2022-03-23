@@ -365,7 +365,8 @@ a:hover {
 }
 
 .seated-event-venue-location {
-  padding-top: 2px;
+  padding-top: 1px;
+  padding-bottom: 5px;
   color: #3366CC;
   font-family: Verdana;
   font-size: 14px;
