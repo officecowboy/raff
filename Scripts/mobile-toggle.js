@@ -89,6 +89,13 @@ document.getElementById("button-video").addEventListener('click', function () {
 });
 document.getElementById("button-pics").addEventListener('click', function () {
   slideToggle(document.getElementById("mobile-pics-box"), 200);
+  let picsText = document.querySelector(".pics-text")
+  if (picsText.innerHTML == "Pics") {
+    picsText.innerHTML = "Tap!"
+  }
+  else {
+    picsText.innerHTML = "Pics"
+  }
 });
 document.getElementById("button-merch").addEventListener('click', function () {
   slideToggle(document.getElementById("mobile-merch-box"), 200);
