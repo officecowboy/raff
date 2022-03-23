@@ -282,11 +282,6 @@ a:hover {
   max-height: 410px;
 }
 
-.shows-box {
-  color:#EC5D93;
-  overflow-y: scroll;
-
-}
 
 .contact {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -319,6 +314,11 @@ a:hover {
   font-size: 36px;
 }
 
+.shows-box {
+  color:#3366CC;
+  overflow-y: scroll;
+}
+
 .seated-event-link1,
 .seated-event-link1:visited,
 .seated-event-link2,
@@ -344,6 +344,13 @@ a:hover {
 .seated-follow-link:hover {
   color: #fef3fe !important;
   background: #EC5D93 !important;
+}
+
+.seated-event-description-cells {
+  width: 100%;
+}
+.seated-event-venue-location {
+  width: 100%;
 }
 
 
