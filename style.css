@@ -515,6 +515,9 @@ a:hover {
 
   html, body {overflow: scroll}
 
+  .seated-follow-box {
+    color:#EC5D93;
+  }
 
   .seated-event-details-cell {
     padding-top: 3px;
