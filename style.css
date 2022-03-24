@@ -366,14 +366,15 @@ a:hover {
 
 .seated-event-venue-location {
   padding-top: 1px;
-  padding-bottom: 5px;
-  color: #3366CC;
-  font-family: Verdana;
-  font-size: 14px;
+  color: #EC5D93;
+  font-family: 'Slime-Box';
+  font-size: 16px;
 }
 
 .seated-event-details-cell {
-  font-size: 14px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3366CC
 }
 
 .activated {
@@ -382,6 +383,12 @@ a:hover {
 
 .activated-arrow {
   animation: zoom-in-arrow 0.2s ease;
+}
+
+.seated-event-venue-location {
+  color: #EC5D93;
+  font-family: 'Slime-Box';
+  font-size: 16px;
 }
 
 @keyframes zoom-in {
@@ -508,6 +515,11 @@ a:hover {
 
   html, body {overflow: scroll}
 
+
+  .seated-event-details-cell {
+    padding-top: 3px;
+    padding-bottom: 8px;
+  }
 
   .content {
     display: none;
