@@ -257,6 +257,10 @@ a:hover {
   font-size: 30px;
 }
 
+.small-title {
+  font-size: 24px;
+}
+
 .video-card {
   position: relative;
   width: 100%;
@@ -692,6 +696,10 @@ a:hover {
     display: flex;
     align-items: center;
     font-size: 20px;
+  }
+
+  .small-title {
+    font-size: 12px;
   }
 
   .button:hover {
