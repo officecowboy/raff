@@ -261,6 +261,10 @@ a:hover {
   font-size: 24px;
 }
 
+.smaller-title {
+  font-size: 22px;
+}
+
 .video-card {
   position: relative;
   width: 100%;
@@ -523,6 +527,10 @@ a:hover {
     font-size: 20px;
   }
 
+  .smaller-title {
+    font-size: 18px;
+  }
+
 }
 
 
@@ -707,6 +715,10 @@ a:hover {
     font-size: 12px;
   }
 
+  .smaller-title {
+    font-size: 11px;
+  }
+
   .button:hover {
     color: #F6E701
   }
@@ -822,6 +834,10 @@ a:hover {
 
   .small-title {
     font-size: 12px;
+  }
+
+  .smaller-title {
+    font-size: 11px;
   }
 
   .arrow-right img {
